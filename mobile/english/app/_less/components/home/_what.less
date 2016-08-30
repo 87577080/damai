@@ -1,0 +1,30 @@
+/* what */
+
+@import '../../common/_core.less';
+
+.m-what {
+  .tt, .txt {
+    height: 0;
+    overflow: hidden;
+  }
+
+  @swiper_w: 638;
+  @swiper_h: 426;
+
+  .swiper {
+    &-container {
+      position: absolute;
+      top: 852/@s;
+      left: 54/@s;
+      width: @swiper_w/@s;
+      height: @swiper_h/@s;
+      overflow: hidden;
+    }
+
+    &-slide {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
